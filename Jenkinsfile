@@ -3,8 +3,8 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "ci-cd-app"
-        PORT = "8082"
+        IMAGE_NAME = "ci-cd-app-2"
+        PORT = "7550"
     }
 
     stages {
