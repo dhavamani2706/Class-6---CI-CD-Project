@@ -31,7 +31,7 @@ pipeline {
 
       stage ('Build number info') {
          steps {
-           sh 'Build Number: ${BUILD_NUMBER}'
+           echo "Build Number: ${BUILD_NUMBER}"
           }
       }
 
