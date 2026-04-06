@@ -15,6 +15,11 @@ pipeline {
             }
         }
 
+      stage('Stop Old Container') {
+    steps {
+        sh 'docker rm -f ci-cd-container || true'
+    }
+}
         stage('Run Container') {
             steps {
                 sh """
